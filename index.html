@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Center</title>
+    <style>
+        @font-face {
+    font-family: 'Aurebesh';
+    src: url('/WEB/FTAurebesh-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'Aurebesh';
+    background-color: rgb(10, 16, 26);
+    color: lightblue;
+}
+#planetinput{
+    font-family: 'Aurebesh';
+}
+#container{
+    margin: auto;
+    max-width: 600px;
+}
+#box{
+    width: fit-content;
+    padding: 10px;
+    background-color: rgb(23, 26, 27);
+    border: 2px solid lightblue;
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+    <div id="box">
+        <div id="Map">
+        <img src="MainGalaxy.webp" height= 500px>
+        </div>
+        <div id="Text">
+            <p>
+            <details>
+                <summary>Notizen</summary>
+                <div>
+                    <h4>Pläne befinden sich im Sektor :verschlüsselt"15:F":</h4>
+                </div>
+            </details>
+            </p>
+        </div>
+    
+    </div>
+    <div id="Questionbox">
+<label for="planetinput"><h4>Welchen Sektor wollen Sie genauer betrachten?</h4></label>
+<input type="password" id="planetinput" placeholder="Eingabe hier">
+<button onclick="checkmaps()">🔍︎</button>
+
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
