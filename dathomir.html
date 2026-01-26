@@ -30,6 +30,26 @@ body{
 #picture{
    border: 1px dotted lightblue; 
 }
+#position{
+    background-color: rgb(140, 206, 228);
+    width: 15px;
+    height: 15px;
+    border: 1px black solid;
+    position: relative;
+    bottom: 308px;
+  right: -297px;
+  
+  animation-name: turn ;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  
+
+}
+@keyframes turn{
+    0% {}
+    50%{background-color: red;}
+    100%{rotate: 360deg;}
+}
     </style>
 </head>
 <body>
@@ -39,7 +59,9 @@ body{
     <img src="map-drop-dathomir-in-4k-custom-map-for-a-persistent-star-v0-9dajzobadpte1.webp" height="500px">
     </div>
     <h1>Dathomir Karte 1</h1>
+    <h3>Ihr befindet euch gerade auf diesem Planeten.</h3>
 </div>
+<div id="position"></div>
 </div>
 </body>
 </html>
